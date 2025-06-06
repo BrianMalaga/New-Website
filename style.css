@@ -17,7 +17,7 @@ nav{
 }
 
 ul{
-    margin: 0 16px;
+    margin: 0 30px;
 }
 
 a{
@@ -67,4 +67,37 @@ h1{
     margin-top: 34px;
     border-radius: 30px;
     margin-bottom: 34px;
+}
+
+/* CONTACT */
+
+.para3{
+    font-size: 20px;
+    margin: 24px;
+}
+
+.buttonfix{
+    margin-left: 24px;
+    font-size: 24px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 20%;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.img__fixing{
+    display: flex;
+    align-items: center;
+}
+
+#contact{
+    background-color: orange;
+}
+
+.contact__fix{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
