@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     font-family: "Roboto", sans-serif;
     padding: 0;
     margin: 0;
@@ -9,24 +9,24 @@
 
 /*NAV*/
 
-nav{
+nav {
     background-color: yellowgreen;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-ul{
+ul {
     margin: 0 30px;
 }
 
-a{
+a {
     font-size: 24px;
     color: black;
     margin-left: 16px;
 }
 
-.img__logo{
+.img__logo {
     height: 160px;
     border-radius: 50%;
     margin: 24px 24px;
@@ -34,34 +34,32 @@ a{
 
 /*ABOUT*/
 
-h1{
+h1 {
     font-size: 60px;
     text-align: center;
     margin-top: 0 24px;
     padding-top: 24px;
 }
 
-.para1{
+.para1 {
     text-align: center;
     font-size: 24px;
     margin: 40px 24px;
 }
 
-.para2{
+.para2 {
     font-size: 20px;
     margin: 0 24px;
 }
 
-.about{
+.about {
     background-color: lightskyblue;
     display: flex;
     align-items: center;
     flex-direction: column;
-
-
 }
 
-.img__one{
+.img__one {
     width: 360px;
     height: 200px;
     margin-top: 34px;
@@ -71,33 +69,68 @@ h1{
 
 /* CONTACT */
 
-.para3{
+.para3 {
     font-size: 20px;
     margin: 24px;
 }
 
-.buttonfix{
-    margin-left: 24px;
-    font-size: 24px;
+.buttonfix {
+    font-size: 18px;
     border: none;
     background-color: black;
     color: white;
-    border-radius: 20%;
+    border-radius: 35%;
     cursor: pointer;
-    margin-bottom: 16px;
+    margin: 24px 24px;
 }
 
-.img__fixing{
-    display: flex;
-    align-items: center;
-}
-
-#contact{
+#contact {
     background-color: orange;
 }
 
-.contact__fix{
+.contact__fix {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
+.color__fix {
+    background-color: yellowgreen;
+}
+
+/* REVIEWS */
+
+#reviews {
+    background-color: lightcoral;
+}
+
+li {
+    padding: 16px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: lightskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img__footer{
+    width: 160px;
+    height: 120px;
+    margin: 24px 24px;
+    border-radius: 50%;
+}
+
+
