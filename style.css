@@ -39,6 +39,13 @@ h1 {
     text-align: center;
     margin-top: 0 24px;
     padding-top: 24px;
+    animation: float 2000ms infinite alternate-reverse;
+    transition: all 300px;
+}
+
+@keyframes float{
+    100%{transform: translateX(50px);}
+    100%{transform: translateY(50px);}
 }
 
 .para1 {
@@ -82,6 +89,14 @@ h1 {
     border-radius: 35%;
     cursor: pointer;
     margin: 24px 24px;
+    animation: float 2000ms infinite alternate-reverse;
+    transition: all 300ms;
+}
+
+
+@keyframes float{
+    0%{transform: translateY(0px);}
+    100%{transform: translateX(10px);}
 }
 
 #contact {
@@ -105,6 +120,11 @@ form {
     background-color: yellowgreen;
 }
 
+input, textarea{
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
 /* REVIEWS */
 
 #reviews {
@@ -114,7 +134,6 @@ form {
 li {
     padding: 16px;
 }
-
 
 /* FOOTER */
 
@@ -133,4 +152,30 @@ footer {
     border-radius: 50%;
 }
 
+.copy__right{
+    margin: 24px;
+    font-size: 16px;
+    text-decoration: underline;
+}
 
+@media (max-width:350px) {
+
+    ul{
+        display: none;
+    }
+
+    .img__logo{
+        display: flex;
+        margin: 24px 24px;
+        width: 100%;
+    }
+
+    .img__one{
+        margin: 24px;
+        padding: 24px;
+        border-radius: 30%;
+    }
+
+
+
+}
