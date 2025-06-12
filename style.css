@@ -23,13 +23,34 @@ ul {
 a {
     font-size: 24px;
     color: black;
-    margin-left: 16px;
+    margin: 0 24px;
 }
 
+.links__footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    animation: float 2000ms infinite alternate-reverse;
+    transition: all 300px;
+}    
+
+@keyframes float{
+    0%{transform: translateX(0px);}
+    100%{transform: translateY(10px);}
+}
+    
 .img__logo {
     height: 160px;
     border-radius: 50%;
     margin: 24px 24px;
+    animation: float 2000ms infinite alternate-reverse;
+    transition: all 300px;
+}
+
+@keyframes float{
+    0%{transform: translateX(0px);}
+    100%{transform: translateY(10px);}
 }
 
 /*ABOUT*/
@@ -44,8 +65,8 @@ h1 {
 }
 
 @keyframes float{
-    100%{transform: translateX(50px);}
-    100%{transform: translateY(50px);}
+    0%{transform: translateX(0px);}
+    100%{transform: translateY(10px);}
 }
 
 .para1 {
@@ -132,8 +153,11 @@ input, textarea{
 }
 
 li {
-    padding: 16px;
+    padding: 20px 24px;
+    list-style-type: none;
 }
+
+
 
 /* FOOTER */
 
@@ -150,6 +174,13 @@ footer {
     height: 120px;
     margin: 24px 24px;
     border-radius: 50%;
+    animation: float 2000ms infinite alternate-reverse;
+    transition: all 300px;
+}
+
+@keyframes float{
+    0%{transform: translateX(0px);}
+    100%{transform: translateY(10px);}
 }
 
 .copy__right{
@@ -158,24 +189,45 @@ footer {
     text-decoration: underline;
 }
 
-@media (max-width:350px) {
-
-    ul{
-        display: none;
-    }
+@media (max-width:320px) {
 
     .img__logo{
         display: flex;
-        margin: 24px 24px;
-        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 24px auto;
+        width: 60%;
     }
 
     .img__one{
-        margin: 24px;
+        margin: 24px 24px;
         padding: 24px;
         border-radius: 30%;
     }
 
+    .links{
+        display: none;
+    }
 
+    .img__one--320px{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 
+    .links__footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .links__space{
+        margin: 8px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
 }
