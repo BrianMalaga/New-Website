@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: 16px;
+    background-color: blanchedalmond;
+}
+
 /*NAV*/
 
 nav {
@@ -172,7 +177,7 @@ footer {
 .img__footer{
     width: 160px;
     height: 120px;
-    margin: 24px 24px;
+    margin: 24px auto;
     border-radius: 50%;
     animation: float 2000ms infinite alternate-reverse;
     transition: all 300px;
@@ -188,6 +193,8 @@ footer {
     font-size: 16px;
     text-decoration: underline;
 }
+
+/* PHONE SCREEN */ 
 
 @media (max-width:320px) {
 
@@ -229,5 +236,17 @@ footer {
 
     h1{
         font-size: 40px;
+    }
+}
+
+@media (max-width: 597px) {
+    .links{
+        display: flex;
+        flex-direction: column;
+        margin-right: 60px;
+    }
+
+    .img__logo{
+        margin: 24px 60px;
     }
 }
