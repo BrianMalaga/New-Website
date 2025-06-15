@@ -23,6 +23,7 @@ nav {
 
 ul {
     margin: 0 30px;
+    display: flex;
 }
 
 a {
